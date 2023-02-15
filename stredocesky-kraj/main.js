@@ -8,10 +8,13 @@ const showSlide = async s => {
 	nw.style.opacity = 0;
 	od.style.zIndex = 10;
 	nw.style.zIndex = 20;
+	nw.style.display = "block";
 	for(let i = 0; i <= 100; i++){
 		nw.style.opacity = i/100;
 		await new Promise(r=>setTimeout(r, 2));
 	}
+	od.style.display = "none";
+	nw.style.display = "block";
 };
 
 const init = ()=>{
