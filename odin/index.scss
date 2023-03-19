@@ -71,6 +71,10 @@ a {
 						background: lighten($dark, 5%);
 						filter: brightness(115%);
 					}
+					a{
+						display: block;
+						height: 50px;
+					}
 				}
 			}
 		}
@@ -120,6 +124,9 @@ a {
 			color: $accent;
 		}
 		.buttons{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
 			width: 100%;
 			text-align: center;
 			margin: 50px 0;
@@ -323,6 +330,9 @@ a {
 		&:hover{
 			color: $accent;
 		}
+		a{
+			padding: 20px;
+		}
 	}
 }
 
@@ -340,6 +350,12 @@ a {
 	&:hover{
 		filter: brightness(110%);
 	}
+	a{
+		display: block;
+		height: 45px;
+		margin-top: -15px;
+		line-height: 45px;
+	}
 }
 
 footer{
@@ -350,6 +366,23 @@ footer{
 	color: $light;
 	font-size: 20px;
 	a{
-		border-bottom: 2px solid $primary;
+		position: relative;
+		border-bottom: 3px solid $primary;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			transform: scaleX(0);
+			height: 3px;
+			bottom: -3px;
+			left: 0;
+			background-color: $accent;
+			transform-origin: bottom right;
+			transition: transform 0.3s ease-out;
+		}
+		&:hover::after {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
 	}
 }
