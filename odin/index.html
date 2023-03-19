@@ -1,67 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
 	<meta charset="UTF-8">
-	<title>Ódinův pohár</title>
+	<title>Odinův pohár</title>
 	<link rel="stylesheet" href="index.css">
+	<script src="index.js" defer></script>
 </head>
 <body>
 
+<a class="anchor" id="domu"></a>
 <header id="header">
 	<div class="menu">
-		<h1>ÓDINŮV POHÁR</h1>
+		<h1><a href="#domu">ODINŮV POHÁR</a></h1>
 		<nav>
 			<ul>
-				<li>O soutěži</li>
-				<li>Historie</li>
-				<li>Výsledky</li>
-				<li>Organizátoři</li>
+				<li><a href="#o-soutezi">O soutěži</a></li>
+				<li><a href="#vysledky">Výsledky</a></li>
+				<li><a href="#aktuality">Aktuality</a></li>
 			</ul>
 		</nav>
-		<span class="btn">SOUTĚŽIT</span>
+		<span class="btn"><a href="#soutezit">SOUTĚŽIT</a></span>
 	</div>
 	<div class="content">
-		<div class="text">
-			<h2>Literární soutěž</h2>
-			<p>
-				Ódinův pohár je každoroční literární soutěž pořádaná kabinetem češtiny
-				<a href="https://arcig.cz">Arcibiskupského gymnázia</a>. Soutěží se ve třech kategoriích
-				(povídka, esej a sonet) a soutěž je otevřená pro studenty všech ročníků. Uzávěrka soutěže
-				je tradičně 6. ledna a vyhlášení výsledků v následujícím měsíci.
-			</p><br>
-			<span class="btn">SOUTĚŽIT</span>
-			<span class="btn">VÍCE INFORMACÍ</span>
+		<h2>Odinův pohár</h2>
+		<div class="subtitle">Literární soutěž Arcibiskupského gymnázia</div>
+		<div class="buttons">
+			<span class="btn"><a href="#soutezit">SOUTĚŽIT</a></span>
+			<span class="btn"><a href="#o-soutezi">VÍCE INFORMACÍ</a></span>
 		</div>
-		<div class="img"></div>
 	</div>
 </header>
+
+<a class="anchor" id="o-soutezi"></a>
+<section id="about">
+	<h2>O soutěži</h2>
+	<div class="row">
+		<div class="part">
+			<h3>Odinův pohár je soutěž:</h3>
+			<ul>
+				<li><strong>literární,</strong></li>
+				<li>každoroční,</li>
+				<li>pořádaná kabinetem češtiny <a href="https://arcig.cz"><strong>Arcibiskupského gymnázia</strong></a>.</li>
+			</ul>
+		</div>
+		<div class="part">
+			<h3>Soutěžte</h3>
+			<ul>
+				<li>v kategoriích <strong>povídka</strong>, <strong>esej</strong> a <strong>sonet</strong>,</li>
+				<li>do <strong>6. ledna</strong>,</li>
+				<li>s výsledky v následujícím měsíci.</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<a class="anchor" id="zanry"></a>
 <section id="genres">
 	<h2>Žánry</h2>
 	<div>
 		<div class="card">
 			<div class="num">1</div>
-			<h3>Povídka</h3>
-			Povídka je epický literární žánr krátkého či středního rozsahu. Patří mezi fikci a téměř vždy je prozaický, nikoliv veršovaný. Je kratší než román a na rozdíl od něj zachycuje pouze jeden aspekt života či jeden vybraný moment, nikoliv lidský život jako celek.
-			<br>
-			<span class="btn">Ukázka povídky</span>
+			<div class="content">
+				<h3>Povídka</h3>
+				<p>Povídka je epický literární žánr krátkého či středního rozsahu. Patří mezi fikci a téměř vždy je prozaický, nikoliv veršovaný. Je kratší než román a na rozdíl od něj zachycuje pouze jeden aspekt života či jeden vybraný moment, nikoliv lidský život jako celek.</p>
+				<a class="btn" href="#">Ukázka</a>
+			</div>
 		</div>
 		<div class="card">
 			<div class="num">2</div>
-			<h3>Esej</h3>
-			Nějaký text o eseji
-			<br>
-			<span class="btn">Ukázka eseje</span>
+			<div class="content">
+				<h3>Esej</h3>
+				<p>Nějaký text o eseji.</p>
+				<a class="btn" href="#">Ukázka</a>
+			</div>
 		</div>
 		<div class="card">
 			<div class="num">3</div>
-			<h3>Sonet</h3>
-			Sonet je literární poetický útvar, který vznikl v 1. pol. 13. století, vyznačující se přesně vymezenou strukturou 14 veršů a logickým členěním. V románských jazycích se v sonetech užívá obvykle hendekasylabu nebo alexandrínu, v angličtině jambického pentametru. Poněkud zastaralý český překlad slova sonet je znělka.
-			<br>
-			<span class="btn">Ukázka sonetu</span>
+			<div class="content">
+				<h3>Sonet</h3>
+				<p>Sonet je literární poetický útvar, který vznikl v 1. pol. 13. století, vyznačující se přesně vymezenou strukturou 14 veršů a logickým členěním. V románských jazycích se v sonetech užívá obvykle hendekasylabu nebo alexandrínu, v angličtině jambického pentametru. Poněkud zastaralý český překlad slova sonet je znělka.</p>
+				<a class="btn" href="#">Ukázka</a>
+			</div>
 		</div>
 	</div>
 </section>
+
 <div id="randomDiv"></div>
+
+<a class="anchor" id="vysledky"></a>
 <section id="history">
 	<h2>Vítězové a jejich práce</h2>
 	<table>
@@ -76,25 +102,25 @@
 			<td>
 				<div class="winner">
 					<img src="https://cdn.pixabay.com/photo/2015/10/28/16/47/cup-1010916_1280.jpg">
-					<h3>Jaromír Novotný</h3>
+					<h3>Dlouhé jméno Dlouhé příjmení</h3>
 					<div>a jeho povídka</div>
-					<div><a href="">Povídka Jaromíra Novotného</a></div>
+					<div><a href="#">Povídka</a></div>
 				</div>
 			</td>
 			<td>
 				<div class="winner">
 					<img src="https://cdn.pixabay.com/photo/2015/10/30/10/03/cup-1013619_1280.jpg">
-					<h3>Jaromír Novotný</h3>
+					<h3>Jméno Příjmení</h3>
 					<div>a jeho esej</div>
-					<div><a href="">Esej Jaromíra Novotného</a></div>
+					<div><a href="#">Esej</a></div>
 				</div>
 			</td>
 			<td>
 				<div class="winner">
 					<img src="https://cdn.pixabay.com/photo/2016/12/07/09/28/fax-1889011_1280.jpg">
-					<h3>Jaromír Novotný</h3>
+					<h3>Abc Def</h3>
 					<div>a jeho sonet</div>
-					<div><a href="">Sonet Jaromíra Novotného</a></div>
+					<div><a href="#">Sonet</a></div>
 				</div>
 			</td>
 		</tr>
@@ -105,7 +131,7 @@
 					<img src="pohar.png">
 					<h3>Vojtěch Stluka</h3>
 					<div>a jeho povídka</div>
-					<div><a href="">Knihovník</a></div>
+					<div><a href="#">Knihovník</a></div>
 				</div>
 			</td>
 			<td>
@@ -113,7 +139,7 @@
 					<img src="pohar.png">
 					<h3>Kateřina Václavíková</h3>
 					<div>a její esej</div>
-					<div><a href="">Je vhodný návrat vlků do české přírody?</a></div>
+					<div><a href="#">Je vhodný návrat vlků do české přírody?</a></div>
 				</div>
 			</td>
 			<td>
@@ -121,18 +147,28 @@
 					<img src="pohar.png">
 					<h3>Cena neudělena</h3>
 					<div>&nbsp;</div>
-					<div><a href="">&nbsp;</a></div>
+					<div><a href="#">&nbsp;</a></div>
 				</div>
 			</td>
 		</tr>
 	</table>
 </section>
-<section id="organizers">
+
+<a class="anchor" id="aktuality"></a>
+<section id="news">
 
 </section>
+
+<a class="anchor" id="soutezit"></a>
 <section id="enter">
-
+	ZBÝVÁ JEN 5 KLIKNUTÍ K ODESLÁNÍ VAŠEHO VÝTVORU
+	<span class="button">
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeiy2iaCd69YfusrgdxFQuGUtq1AUE1ieTDY0HNm0sD5J6TiA/viewform?usp=sf_link">ODESLAT</a>
+	</span>
 </section>
-<footer id="footer"></footer>
+
+<footer id="footer">
+	Web vytvořil <a href="mailto:machat@arcig.cz">Tomáš Mácha.</a>
+</footer>
 </body>
 </html>
