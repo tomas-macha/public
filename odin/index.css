@@ -71,6 +71,10 @@ a {
   background: #242424;
   filter: brightness(115%);
 }
+#header .menu nav ul li a {
+  display: block;
+  height: 50px;
+}
 #header .menu .btn {
   display: block;
   margin: 25px;
@@ -114,6 +118,9 @@ a {
   color: #abbbf2;
 }
 #header .content .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   text-align: center;
   margin: 50px 0;
@@ -317,6 +324,9 @@ a {
 #enter .button:hover {
   color: #abbbf2;
 }
+#enter .button a {
+  padding: 20px;
+}
 
 .btn {
   text-align: center;
@@ -333,6 +343,12 @@ a {
 .btn:hover {
   filter: brightness(110%);
 }
+.btn a {
+  display: block;
+  height: 45px;
+  margin-top: -15px;
+  line-height: 45px;
+}
 
 footer {
   width: 100%;
@@ -343,7 +359,24 @@ footer {
   font-size: 20px;
 }
 footer a {
-  border-bottom: 2px solid #5274e5;
+  position: relative;
+  border-bottom: 3px solid #5274e5;
+}
+footer a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: #abbbf2;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+footer a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /*# sourceMappingURL=index.css.map */
