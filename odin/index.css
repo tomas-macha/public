@@ -79,7 +79,24 @@ a {
   display: block;
   margin: 25px;
   height: 25px;
-  line-height: 25px;
+}
+#header .menu .btn a {
+  font-size: 20px;
+  height: 55px;
+  line-height: 55px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  #header .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  #header .menu ul {
+    display: none;
+  }
+  #header .menu .btn {
+    display: none;
+  }
 }
 #header .menu-scroll {
   height: 80px;
@@ -101,6 +118,11 @@ a {
   line-height: 15px;
   margin: 20px;
 }
+#header .menu-scroll .btn a {
+  font-size: 15px;
+  height: 45px;
+  line-height: 45px;
+}
 #header .content {
   color: #EEEEEE;
   padding: 160px 100px 0 100px;
@@ -108,14 +130,19 @@ a {
 #header .content h2 {
   font-size: 120px;
   text-align: center;
-  border-bottom: 5px solid #5274e5;
+  border-bottom: 5px solid #f15c22;
   margin: 0;
+}
+@media screen and (max-width: 992px) {
+  #header .content h2 {
+    font-size: 80px;
+  }
 }
 #header .content .subtitle {
   margin-top: 30px;
   font-size: 36px;
   text-align: center;
-  color: #abbbf2;
+  color: #f7a382;
 }
 #header .content .buttons {
   display: flex;
@@ -124,49 +151,6 @@ a {
   width: 100%;
   text-align: center;
   margin: 50px 0;
-}
-
-#about {
-  width: 100%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(82%2c 116%2c 229%2c 1)'%3e%3c/rect%3e%3cpath d='M1226.939%2c253.29C1276.35%2c251.641%2c1318.544%2c219.6%2c1341.653%2c175.894C1363.272%2c135.008%2c1359.873%2c86.315%2c1336.252%2c46.552C1313.161%2c7.681%2c1272.139%2c-16.169%2c1226.939%2c-17.212C1179.764%2c-18.3%2c1133.963%2c1.553%2c1108.526%2c41.298C1080.967%2c84.358%2c1073.22%2c139.387%2c1098.151%2c184.02C1123.629%2c229.632%2c1174.723%2c255.033%2c1226.939%2c253.29' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1520.555%2c252.46C1576.22%2c251.76%2c1621.169%2c213.087%2c1649.711%2c165.292C1679.15%2c115.995%2c1698.495%2c54.245%2c1667.966%2c5.616C1638.629%2c-41.115%2c1575.616%2c-43.997%2c1520.555%2c-40.442C1472.911%2c-37.366%2c1428.687%2c-17.377%2c1402.8%2c22.738C1374.348%2c66.829%2c1361.714%2c121.914%2c1385.65%2c168.611C1411.536%2c219.111%2c1463.811%2c253.173%2c1520.555%2c252.46' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M628.209%2c434.124C651.861%2c434.169%2c676.937%2c428.345%2c689.051%2c408.031C701.397%2c387.328%2c695.62%2c361.815%2c683.889%2c340.757C671.769%2c319.001%2c653.113%2c298.911%2c628.209%2c298.818C603.187%2c298.725%2c583.941%2c318.456%2c571.805%2c340.338C560.093%2c361.454%2c555.319%2c387.11%2c567.763%2c407.802C579.902%2c427.987%2c604.655%2c434.08%2c628.209%2c434.124' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M903.844%2c510.755C935.95%2c508.703%2c962.044%2c488.017%2c978.465%2c460.351C995.303%2c431.982%2c1004.572%2c397.206%2c988.256%2c368.533C971.802%2c339.618%2c937.106%2c328.545%2c903.844%2c329.216C871.874%2c329.861%2c842.687%2c345.098%2c825.129%2c371.823C805.452%2c401.773%2c792.977%2c439.9%2c810.642%2c471.079C828.481%2c502.566%2c867.729%2c513.064%2c903.844%2c510.755' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M980.693%2c342.799C1002.923%2c342.861%2c1023.492%2c330.42%2c1034.11%2c310.89C1044.291%2c292.164%2c1041.091%2c269.792%2c1030.416%2c251.343C1019.761%2c232.927%2c1001.963%2c218.06%2c980.693%2c218.568C960.101%2c219.06%2c945.187%2c235.766%2c934.921%2c253.623C924.697%2c271.407%2c918.42%2c292.347%2c927.787%2c310.596C937.892%2c330.282%2c958.565%2c342.738%2c980.693%2c342.799' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M148.472%2c343.234C175.776%2c342.128%2c192.717%2c316.852%2c206.246%2c293.11C219.59%2c269.693%2c231.815%2c242.727%2c219.369%2c218.821C206.199%2c193.525%2c176.951%2c180.632%2c148.472%2c182.136C122.306%2c183.518%2c102.491%2c202.952%2c89.461%2c225.684C76.518%2c248.264%2c70.298%2c274.886%2c81.975%2c298.146C94.853%2c323.798%2c119.793%2c344.396%2c148.472%2c343.234' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1495.141%2c647.988C1550.07%2c645.067%2c1593.445%2c604.717%2c1618.372%2c555.682C1640.903%2c511.361%2c1638.818%2c458.971%2c1612.754%2c416.631C1587.929%2c376.304%2c1542.41%2c358.378%2c1495.141%2c355.502C1440.877%2c352.201%2c1380.716%2c355.903%2c1349.82%2c400.634C1315.403%2c450.464%2c1316.23%2c517.903%2c1346.907%2c570.118C1377.209%2c621.696%2c1435.404%2c651.165%2c1495.141%2c647.988' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M33.932%2c275.773C61.082%2c276.012%2c85.424%2c261.04%2c99.928%2c238.088C115.612%2c213.269%2c124.139%2c181.805%2c109.337%2c156.45C94.624%2c131.247%2c63.099%2c124.079%2c33.932%2c125.042C6.676%2c125.942%2c-19.773%2c137.489%2c-33.314%2c161.161C-46.77%2c184.683%2c-43.793%2c213.569%2c-30.079%2c236.942C-16.543%2c260.012%2c7.185%2c275.537%2c33.932%2c275.773' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M506.429%2c639.603C553.579%2c639.654%2c590.855%2c605.149%2c615.097%2c564.709C640.209%2c522.817%2c656.586%2c471.672%2c632.603%2c429.124C608.3%2c386.008%2c555.919%2c372.583%2c506.429%2c371.923C455.468%2c371.243%2c399.266%2c381.253%2c374.288%2c425.678C349.628%2c469.537%2c371.725%2c521.668%2c398.167%2c564.476C422.908%2c604.53%2c459.35%2c639.552%2c506.429%2c639.603' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M744.862%2c251.314C780.431%2c250.248%2c814.25%2c232.106%2c830.495%2c200.446C845.584%2c171.039%2c836.253%2c136.333%2c817.998%2c108.78C801.772%2c84.289%2c774.239%2c71.457%2c744.862%2c71.194C714.959%2c70.926%2c686.658%2c83.013%2c669.419%2c107.448C648.754%2c136.738%2c633.208%2c174.112%2c649.855%2c205.858C667.33%2c239.182%2c707.251%2c252.441%2c744.862%2c251.314' fill='rgba(238%2c 238%2c 238%2c 0.15)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
-}
-#about h2 {
-  width: 100%;
-  text-align: center;
-  font-size: 60px;
-  margin: 0;
-  padding: 30px 0;
-  color: #EEEEEE;
-}
-#about .row {
-  display: flex;
-  flex-direction: row;
-}
-#about .row .part {
-  width: 100%;
-  padding: 0 50px;
-  margin-bottom: 50px;
-}
-#about .row .part h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 35px;
-  margin: 0;
-  padding-bototm: 30px;
-  color: #EEEEEE;
-}
-#about .row .part ul {
-  margin-left: 50px;
-}
-#about .row .part ul li {
-  color: #171717;
-  font-size: 25px;
-  padding: 5px;
-  text-shadow: 0px 0px 1px #5274e5;
-}
-#about .row .part a {
-  text-decoration: underline;
-  font-weight: bold;
 }
 
 #genres {
@@ -206,7 +190,7 @@ a {
   font-weight: bold;
   width: 150px;
   height: 150px;
-  background-color: #5274e5;
+  background-color: #f15c22;
   color: #EEEEEE;
   border-radius: 50%;
   margin-top: -75px;
@@ -229,11 +213,15 @@ a {
 #genres > div .card .content .btn {
   display: block;
 }
-
-#randomDiv {
-  width: 100%;
-  height: 100px;
-  background: #171717;
+@media screen and (max-width: 992px) {
+  #genres > div {
+    flex-direction: column;
+  }
+  #genres > div .card {
+    width: calc(100% - 40px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 #history {
@@ -283,7 +271,7 @@ a {
   box-shadow: rgba(23, 23, 23, 0.24) 0px 3px 8px;
 }
 #history table tr td .winner a {
-  color: #5274e5;
+  color: #f15c22;
   font-weight: bold;
   font-size: 18px;
 }
@@ -291,41 +279,44 @@ a {
   width: 10%;
   vertical-align: middle;
   font-size: 30px;
-  color: #5274e5;
+  color: #f15c22;
   font-weight: bold;
   text-align: center;
 }
 
 #news {
-  width: 100%;
-  height: 100px;
+  width: calc(100% - 30px);
   background: #171717;
+  padding: 15px;
 }
-
-#enter {
-  width: 100%;
-  height: 90px;
-  line-height: 90px;
-  background: #5274e5;
+#news h2 {
   color: #EEEEEE;
   text-align: center;
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 60px;
+  margin: 0;
+  padding: 30px;
 }
-#enter .button {
+#news .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+#news .grid article {
+  width: calc(100% - 120px);
   background: #EEEEEE;
-  color: #5274e5;
-  transition: 0.3s;
-  padding: 15px;
-  font-size: 25px;
-  border-radius: 30px;
-  line-height: 90px;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: justify;
+  box-shadow: rgba(238, 238, 238, 0.24) 0px 3px 8px;
 }
-#enter .button:hover {
-  color: #abbbf2;
+#news .grid article:first-child {
+  grid-column: 1/3;
 }
-#enter .button a {
-  padding: 20px;
+@media screen and (max-width: 768px) {
+  #news .grid article {
+    grid-column: 1/3;
+  }
 }
 
 .btn {
@@ -334,7 +325,7 @@ a {
   padding: 15px;
   margin: 10px;
   color: #EEEEEE;
-  background: #5274e5;
+  background: #f15c22;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
@@ -360,7 +351,7 @@ footer {
 }
 footer a {
   position: relative;
-  border-bottom: 3px solid #5274e5;
+  border-bottom: 3px solid #f15c22;
 }
 footer a::after {
   content: "";
@@ -370,7 +361,7 @@ footer a::after {
   height: 3px;
   bottom: -3px;
   left: 0;
-  background-color: #abbbf2;
+  background-color: #f7a382;
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
