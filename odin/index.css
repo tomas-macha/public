@@ -86,7 +86,7 @@ a {
   line-height: 55px;
   transition: 0.3s;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1050px) {
   #header .menu {
     flex-direction: column;
     text-align: center;
@@ -321,6 +321,13 @@ a {
   border-radius: 5px;
   text-align: justify;
   box-shadow: rgba(238, 238, 238, 0.24) 0px 3px 8px;
+}
+#news .grid article h3 {
+  margin-bottom: 5px;
+}
+#news .grid article .time {
+  color: #AAAAAA;
+  font-size: 13px;
 }
 #news .grid article:first-child {
   grid-column: 1/3;
