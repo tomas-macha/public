@@ -120,7 +120,7 @@ a {
   margin: 20px;
 }
 #header .menu-scroll .btn a {
-  font-size: 15px;
+  font-size: 20px;
   height: 45px;
   line-height: 45px;
 }
@@ -299,7 +299,7 @@ a {
 #news {
   width: calc(100% - 30px);
   background: #171717;
-  padding: 15px;
+  padding: 15px 15px 45px;
 }
 #news h2 {
   color: #EEEEEE;
@@ -318,7 +318,7 @@ a {
   background: #EEEEEE;
   margin: 15px;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: justify;
   box-shadow: rgba(238, 238, 238, 0.24) 0px 3px 8px;
 }
