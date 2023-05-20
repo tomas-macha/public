@@ -123,7 +123,7 @@ a {
 			line-height: 15px;
 			margin: 20px;
 			a{
-				font-size: 15px;
+				font-size: 20px;
 				height: 45px;
 				line-height: 45px;
 			}
@@ -297,7 +297,7 @@ a {
 #news{
 	width: calc(100% - 30px);
 	background: $dark;
-	padding: 15px;
+	padding: 15px 15px 45px;
 	h2{
 		color: $light;
 		text-align: center;
@@ -314,7 +314,7 @@ a {
 			background: $light;
 			margin: 15px;
 			padding: 30px;
-			border-radius: 5px;
+			border-radius: 15px;
 
 			text-align: justify;
 			box-shadow: rgba($light, 0.24) 0px 3px 8px;
